@@ -121,7 +121,13 @@ const overrides = existsSync('overrides.json')
     : {};
 
 const repos = await repositories();
-const cards = repos.map(repo => card(repo, overrides));
+
+// L'API rend les dépôts du plus récemment poussé au plus ancien : l'ordre de la page
+// changerait donc à chaque mise à jour d'un projet. On trie par nom, à la française,
+// pour que chaque projet garde sa place et se retrouve d'un coup d'œil.
+const cards = repos
+    .map(repo => card(repo, overrides))
+    .sort((a, b) => a.title.localeCompare(b.title, 'fr', { sensitivity: 'base', numeric: true }));
 
 await mkdir(OUT, { recursive: true });
 await writeFile(`${OUT}/index.html`, render(cards));

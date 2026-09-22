@@ -4,7 +4,9 @@ La page d'accueil de <https://labilbe.github.io/> : la liste des projets publié
 
 Elle n'est pas écrite à la main. `build.mjs` interroge l'API GitHub, garde les dépôts publics dont
 les Pages sont activées — ni le dépôt de ce site, ni les forks, ni les archives — et en fait une
-page statique dans `dist/`. Publier un nouveau projet suffit donc à le voir apparaître ici.
+page statique dans `dist/`. Publier un nouveau projet suffit donc à le voir apparaître ici. Les
+projets sont listés par nom, et non par date de dernière poussée : chacun garde sa place d'une
+reconstruction à l'autre.
 
 ```bash
 node build.mjs          # écrit dist/index.html et dist/styles.css
