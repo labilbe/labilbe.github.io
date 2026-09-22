@@ -9,6 +9,11 @@
     "note": "Dames internationales 10×10 : prise maximale obligatoire, dame volante, parties au format PDN.",
     "tags": ["C#", "Blazor WebAssembly"]
   },
+  "puissance4": {
+    "title": "Puissance 4",
+    "note": "Grille 7×6, IA alpha-bêta explorant du centre vers les bords, parties échangeables au format PCN.",
+    "tags": ["C#", "Blazor WebAssembly"]
+  },
   "mastermind": {
     "title": "Mastermind",
     "note": "Code de couleurs à percer en dix essais, décodeur minimax de Knuth, relevés de parties échangeables.",
