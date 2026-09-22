@@ -14,5 +14,9 @@
   },
   "tetris": {
     "title": "Tetris"
+  },
+  "bataille-navale": {
+    "title": "Bataille navale",
+    "note": "Flotte classique sur grille 10×10, IA qui ratisse en damier puis traque, moteur pur et déterministe."
   }
 }
