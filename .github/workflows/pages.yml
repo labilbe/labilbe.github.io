@@ -1,0 +1,56 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  # Une fois par jour : un projet publié la veille apparaît sans qu'on y touche.
+  schedule:
+    - cron: '17 5 * * *'
+  # Et à la demande, pour ne pas attendre le lendemain.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build the page from the GitHub API
+        run: node build.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SITE_USER: ${{ github.repository_owner }}
+
+      # La page n'a de sens que si elle mène quelque part : une liste vide est le
+      # signe que l'API a répondu autre chose que ce qu'on attendait.
+      - name: Check the page lists something
+        run: |
+          node -e '
+          const html = require("fs").readFileSync("dist/index.html", "utf8");
+          const links = [...html.matchAll(/class="card__link" href="([^"]+)"/g)].map(m => m[1]);
+          if (!links.length) throw new Error("aucun projet dans la page construite");
+          console.log(links.length + " liens : " + links.join(", "));
+          '
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,18 @@
+{
+  "echecs": {
+    "title": "Échecs",
+    "note": "Règles complètes, IA alpha-bêta à quatre niveaux, parties au format PGN.",
+    "tags": ["C#", "Blazor WebAssembly"]
+  },
+  "dames": {
+    "title": "Dames",
+    "note": "Dames internationales 10×10 : prise maximale obligatoire, dame volante, parties au format PDN.",
+    "tags": ["C#", "Blazor WebAssembly"]
+  },
+  "belote": {
+    "title": "Belote"
+  },
+  "tetris": {
+    "title": "Tetris"
+  }
+}
