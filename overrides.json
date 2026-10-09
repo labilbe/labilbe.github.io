@@ -28,5 +28,9 @@
   "bataille-navale": {
     "title": "Bataille navale",
     "note": "Flotte classique sur grille 10×10, IA qui ratisse en damier puis traque, moteur pur et déterministe."
+  },
+  "bomberman": {
+    "title": "Bomberman",
+    "note": "Bombes à mèche sur grille 15×13, bonus cachés sous les briques, bots qui datent leur fuite case par case."
   }
 }
