@@ -19,6 +19,10 @@
     "note": "Code de couleurs à percer en dix essais, décodeur minimax de Knuth, relevés de parties échangeables.",
     "tags": ["C#", "Blazor WebAssembly"]
   },
+  "coinche": {
+    "title": "Coinche",
+    "note": "Belote coinchée : enchères de 80 à la générale, coinche et surcoinche, IA qui estime sa main en points."
+  },
   "belote": {
     "title": "Belote"
   },
