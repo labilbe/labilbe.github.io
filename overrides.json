@@ -2,22 +2,34 @@
   "echecs": {
     "title": "Échecs",
     "note": "Règles complètes, IA alpha-bêta à quatre niveaux, parties au format PGN.",
-    "tags": ["C#", "Blazor WebAssembly"]
+    "tags": [
+      "C#",
+      "Blazor WebAssembly"
+    ]
   },
   "dames": {
     "title": "Dames",
     "note": "Dames internationales 10×10 : prise maximale obligatoire, dame volante, parties au format PDN.",
-    "tags": ["C#", "Blazor WebAssembly"]
+    "tags": [
+      "C#",
+      "Blazor WebAssembly"
+    ]
   },
   "puissance4": {
     "title": "Puissance 4",
     "note": "Grille 7×6, IA alpha-bêta explorant du centre vers les bords, parties échangeables au format PCN.",
-    "tags": ["C#", "Blazor WebAssembly"]
+    "tags": [
+      "C#",
+      "Blazor WebAssembly"
+    ]
   },
   "mastermind": {
     "title": "Mastermind",
     "note": "Code de couleurs à percer en dix essais, décodeur minimax de Knuth, relevés de parties échangeables.",
-    "tags": ["C#", "Blazor WebAssembly"]
+    "tags": [
+      "C#",
+      "Blazor WebAssembly"
+    ]
   },
   "coinche": {
     "title": "Coinche",
@@ -44,5 +56,21 @@
   "mille-bornes": {
     "title": "Mille Bornes",
     "note": "Quatre joueurs en deux équipes : feux, bottes et coups fourrés, 1000 bornes au kilomètre près, partie en 5000 points."
+  },
+  "solitaire": {
+    "title": "Solitaire",
+    "note": "Klondike complet : tirage par une ou par trois, clic ou glisser-déposer, indice, annulation sans limite et score classique."
+  },
+  "backgammon": {
+    "title": "Backgammon",
+    "note": "Quinze dames à sortir et les deux dés à jouer entièrement : IA à espérance sur les 36 lancers, parties au format MAT.",
+    "tags": [
+      "C#",
+      "Blazor WebAssembly"
+    ]
+  },
+  "solitaire": {
+    "title": "Solitaire",
+    "note": "Klondike complet : tirage par une ou par trois, clic ou glisser-déposer, indice, annulation sans limite et score classique."
   }
 }
