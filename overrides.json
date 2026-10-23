@@ -36,5 +36,9 @@
   "bomberman": {
     "title": "Bomberman",
     "note": "Bombes à mèche sur grille 15×13, bonus cachés sous les briques, bots qui datent leur fuite case par case."
+  },
+  "yam": {
+    "title": "Yam's",
+    "note": "Cinq dés et treize tours : prime des 63, suites et carrés, adversaire qui choisit ses gardes par simulation."
   }
 }
