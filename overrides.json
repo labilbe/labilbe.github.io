@@ -61,6 +61,10 @@
     "title": "Solitaire",
     "note": "Klondike complet : tirage par une ou par trois, clic ou glisser-déposer, indice, annulation sans limite et score classique."
   },
+  "superkarts": {
+    "title": "SuperKarts 95",
+    "note": "Course de karts en mode 7 : sol projeté ligne par ligne, karts en sprites, huit pilotes, quatre circuits et un championnat."
+  },
   "backgammon": {
     "title": "Backgammon",
     "note": "Quinze dames à sortir et les deux dés à jouer entièrement : IA à espérance sur les 36 lancers, parties au format MAT.",
