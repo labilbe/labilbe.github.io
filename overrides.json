@@ -76,5 +76,9 @@
   "solitaire": {
     "title": "Solitaire",
     "note": "Klondike complet : tirage par une ou par trois, clic ou glisser-déposer, indice, annulation sans limite et score classique."
+  },
+  "hot-rod": {
+    "title": "Hot Rod",
+    "note": "Course en vue de dessus contre le chrono : des checkpoints qui rendent du temps, des billets à ramasser et un garage entre les manches."
   }
 }
